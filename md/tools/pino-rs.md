@@ -4,7 +4,7 @@
 Pino-rs is a lightweight Rust-based notification daemon for Linux, focused on fast rendering, theming support, and scriptable system notifications.
 {% endblock %}
 
-{% block title %} Walrs {% endblock %}
+{% block title %} Pino-rs {% endblock %}
 
 {% block content %}
 
