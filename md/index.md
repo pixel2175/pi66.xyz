@@ -4,13 +4,13 @@
 
 
 
-# >**Heyo :3** [.!text-xl .sm:!text-3xl]
+# >**Heyo :3** [.!text-xl .sm:!text-[1.6rem] .!leading(--text-3xl--line-height)]
 
 Hey there! I'm [<span style="color:var(--color-heading-h3);"> Pi66</span>](/about), a developer with a passion for Rust, Linux,
 and retro computing aesthetics.  
 [see more](/about)
 
-# >**Skills** [.!text-xl .sm:!text-3xl]
+# >**Skills** [.!text-xl .sm:!text-[1.6rem] .!leading(--text-3xl--line-height)]
 
 <div class="table-wrapper" markdown="1">
 
@@ -23,12 +23,12 @@ and retro computing aesthetics.
 
 </div>
 
-# >**Current Projects** [.!text-xl .sm:!text-3xl]
+# >**Current Projects** [.!text-xl .sm:!text-[1.6rem] .!leading(--text-3xl--line-height)]
 
 > [**Pino-rs**](/tools/pino-rs): Notification app <br>
 > [**Walrs**](/tools/walrs): colorscheme generater from wallpaper
 
-# >**Contact** [.!text-xl .sm:!text-3xl]
+# >**Contact** [.!text-xl .sm:!text-[1.6rem] .!leading(--text-3xl--line-height)]
 
 
 > **Discord**: @pi66 <br>
