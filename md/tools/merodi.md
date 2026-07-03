@@ -1,8 +1,8 @@
 {% extends "layout.html" %}
-{% block title %}Walrs{% endblock %}
+{% block title %}Merodi{% endblock %}
 
 {% block meta_description %}
-Walrs is a lightweight Linux theming tool that extracts colors from wallpapers and applies them system-wide for consistent UI styling across applications.
+A markdown-based static site generator built with Python. Write pages in markdown, style them with Jinja2 templates, and get a ready-to-publish website.
 {% endblock %}
 
 {% block content %}
