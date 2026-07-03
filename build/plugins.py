@@ -1,5 +1,5 @@
 from json import loads
 
-about = loads(open("/srv/www/pi66.xyz/build/data/about.json", "r").read())
+about = loads(open("./build/data/about.json", "r").read())
 
 my_tools = loads(open("./build/data/my_tools.json", "r").read())
