@@ -15,6 +15,7 @@ plugins   = "build/plugins.py"
 
 [webview]
 host  = "localhost"
+dev_tools = true
 html_path   = "/"
 static_path = "/static"
 
