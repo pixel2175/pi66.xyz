@@ -4,7 +4,7 @@
 Anime API documentation for accessing anime data, search, episode lists, and streaming links via a RESTful JSON API at https://pi66.xyz/api. Includes endpoints for listing anime, retrieving details by slug, fetching episodes with quality options, and streaming video content.
 {% endblock %}
 
-{% block title %} Walrs {% endblock %}
+{% block title %} PAnime {% endblock %}
 {% block content %}
 
 # >**Anime API Documentation**
