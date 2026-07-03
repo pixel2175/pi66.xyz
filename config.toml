@@ -1,0 +1,22 @@
+[project]
+name        = "pi66.xyz"
+version     = "0.1.0"
+description = "my main website"
+
+[tree]
+markdown  = "md"
+
+static    = "static"
+dest      = "/srv/www/public/pi66.xyz"
+
+templates = "build/templates"
+plugins   = "build/plugins.py"
+
+
+[webview]
+host  = "localhost"
+html_path   = "/"
+static_path = "/static"
+
+[extras]
+highlight = "monokai"
