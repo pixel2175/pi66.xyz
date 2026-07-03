@@ -25,7 +25,7 @@ and retro computing aesthetics.
 
 # >**Current Projects** [.!text-xl .sm:!text-3xl]
 
-> [**Pino-rs**](/tools/pino_rs): Notification app <br>
+> [**Pino-rs**](/tools/pino-rs): Notification app <br>
 > [**Walrs**](/tools/walrs): colorscheme generater from wallpaper
 
 # >**Contact** [.!text-xl .sm:!text-3xl]
