@@ -7,7 +7,7 @@ Walrs is a lightweight Linux theming tool that extracts colors from wallpapers a
 
 {% block content %}
 
-# >[**Walrs**](/tools/walrs) [.!text-4xl .!mb-5]
+# >[**Walrs**](/tools/walrs)
 
 A fast, lightweight color scheme generator written in Rust.
 

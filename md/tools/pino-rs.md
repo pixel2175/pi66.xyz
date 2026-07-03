@@ -8,7 +8,7 @@ Pino-rs is a lightweight Rust-based notification daemon for Linux, focused on fa
 
 {% block content %}
 
-# >[**Pino**](/tools/pino-rs) [.!text-4xl .!mb-5]
+# >[**Pino**](/tools/pino-rs)
 
 Pino is a fully customizable notification tool rewritten in Rust. It allows you to display notifications with various options, including dynamic theming, configurable fonts, and system integration.
 
