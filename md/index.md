@@ -23,10 +23,11 @@ and retro computing aesthetics.
 
 </div>
 
-# >**Current Projects** [.!text-xl .sm:!text-[1.6rem] .!leading(--text-3xl--line-height)]
+# >**Pinged Projects** [.!text-xl .sm:!text-[1.6rem] .!leading(--text-3xl--line-height)]
 
-> [**Pino-rs**](/tools/pino-rs): Notification app <br>
-> [**Walrs**](/tools/walrs): colorscheme generater from wallpaper
+> [**Walrs**](/tools/walrs): colorscheme generater from wallpaper.
+> [**Merodi**](/tools/merodi): A markdown-based static site generator.
+> [**Sta**](/tools/sta): minimal & simple status monitoring app.<br>
 
 # >**Contact** [.!text-xl .sm:!text-[1.6rem] .!leading(--text-3xl--line-height)]
 
