@@ -34,6 +34,7 @@ and retro computing aesthetics.
 
 > **Discord**: @pi66_ <br>
 > [**GitHub**](https://github.com/pixel2175): [@pixel2175](https://github.com/pixel2175)
+> [**Codeberg**](https://codeberg.org/pi66): [@pi66](https://codeberg.org/pi66)
 
 #### // Loves Linux & Retro Themes <br> // Let's all love lain [.!text-gray-600 .p-0]
 
