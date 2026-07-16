@@ -7,7 +7,7 @@ description = "my main website"
 markdown  = "md"
 
 static    = "static"
-dest      = "/srv/www/public/pi66.xyz"
+dest      = "/srv/www/pi66.xyz/public/html"
 
 templates = "build/templates"
 plugins   = "build/plugins.py"
