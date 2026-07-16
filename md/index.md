@@ -25,8 +25,8 @@ and retro computing aesthetics.
 
 # >**Pinged Projects** [.!text-xl .sm:!text-[1.6rem] .!leading(--text-3xl--line-height)]
 
-> [**Walrs**](/tools/walrs): colorscheme generater from wallpaper.
-> [**Merodi**](/tools/merodi): A markdown-based static site generator.
+> [**Walrs**](/tools/walrs): colorscheme generater from wallpaper.<br>
+> [**Merodi**](/tools/merodi): A markdown-based static site generator.<br>
 > [**Sta**](/tools/sta): minimal & simple status monitoring app.<br>
 
 # >**Contact** [.!text-xl .sm:!text-[1.6rem] .!leading(--text-3xl--line-height)]
