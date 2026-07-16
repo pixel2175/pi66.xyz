@@ -32,7 +32,7 @@ and retro computing aesthetics.
 # >**Contact** [.!text-xl .sm:!text-[1.6rem] .!leading(--text-3xl--line-height)]
 
 
-> **Discord**: @pi66 <br>
+> **Discord**: @pi66_ <br>
 > [**GitHub**](https://github.com/pixel2175): [@pixel2175](https://github.com/pixel2175)
 
 #### // Loves Linux & Retro Themes <br> // Let's all love lain [.!text-gray-600 .p-0]
