@@ -85,33 +85,35 @@ Starts a local HTTP server (serving `dest` at `html_path` and `static` at `stati
 | `--verbose` | Show detailed error information (also via `VERBOSE=true`) |
 | `--no-color` | Disable colored terminal output (also via `NO_COLOR=true`) |
 
-# >**How a build works**
+# >**How the build process works**
 
-For each markdown file, Merodi:
+For each Markdown file, Merodi performs the following steps:
 
-1. **Escapes fenced/inline code blocks** by wrapping them in Jinja `{% raw %}...{% endraw %}` so any `{{ }}`/`{% %}`-looking text inside code isn't treated as a template expression.
-2. **Renders math** — any `$...$` (inline) or `$$...$$` (block) segments are converted to MathML via `latex2mathml`.
-3. **Converts Markdown to HTML** using Python-Markdown with the `extra` and `md_in_html` extensions plus a set of `pymdown-extensions` (better emphasis, critic markup, details/summary, syntax highlighting, inline code highlighting, keyboard keys, mark/highlight, superfences, tabbed content, and strikethrough).
-4. **Filters stray Jinja artifacts** left behind by the markdown renderer (e.g. `<p>` tags wrapped around `{% %}` block tags) and strips leftover attribute-list brackets after Jinja expressions.
-5. **Renders the result through Jinja2**, using your `templates/` directory as the loader root, with every function from `plugins.py` injected as a template global.
-6. **Writes the final HTML** to the corresponding path under `dest`, creating directories as needed.
+1. **Protects code blocks** by preventing Jinja syntax inside fenced and inline code from being evaluated during template rendering.
+2. **Renders LaTeX math** by converting inline (`$...$`) and block (`$$...$$`) expressions into MathML using `latex2mathml`.
+3. **Converts Markdown to HTML** with Python-Markdown, using the `extra` and `md_in_html` extensions together with several `pymdown-extensions` for enhanced formatting, syntax highlighting, tabbed content, critic markup, keyboard keys, and more.
+4. **Cleans the generated HTML** by removing Markdown artifacts that can interfere with Jinja rendering, such as unwanted `<p>` tags around template statements and leftover attribute-list markers.
+5. **Renders the page with Jinja2**, loading templates from the configured `templates/` directory and exposing every public function from `plugins.py` as a template global.
+6. **Writes the finished HTML** to the corresponding location in the output directory, creating any missing directories automatically.
 
-If a build step raises an error, Merodi prints an `[ERROR]`/`[WARN]` line to the terminal; in `webview`/`watch` mode, a styled error page (dark background, red header, offending source line highlighted) is shown in the browser/window instead of crashing the process.
+If any step fails, Merodi reports the error in the terminal. When running in `watch` or `webview` mode, it displays a formatted error page highlighting the offending source line instead of terminating the process.
 
 # >**Markdown features**
 
-- **Standard extras** — tables, footnotes, definition lists, fenced code blocks, abbreviations, attribute lists, and more (via Python-Markdown's `extra`)
-- **Math** — LaTeX math rendered as MathML (`$...$` inline, `$$...$$` block)
-- **Syntax highlighting** — Pygments-based, style configurable via `config.toml`
-- **Inline highlights** — `==highlighted text==`
-- **Strikethrough** — `~~strikethrough~~`
-- **Better emphasis** — smarter handling of `*` and `_`
-- **Magic links** — bare URLs auto-link without extra syntax
-- **Keyboard keys** — `{++Ctrl+Alt+Del++}` renders styled `<kbd>` elements
-- **Details/summary** — collapsible `<details>` blocks
-- **Tabbed content** — tabbed code blocks and sections
-- **Critic markup** — track suggested edits with `{--delete--}` and `{++add++}`
-- **Attribute lists** — Merodi patches this extension to use `[.class]` / `[:#id]` instead of the default `{.class}` / `{:#id}` syntax
+Merodi extends standard Markdown with a collection of built-in features:
+
+* **Python-Markdown Extras** — tables, footnotes, definition lists, fenced code blocks, abbreviations, attribute lists, and other extensions provided by `extra`.
+* **LaTeX Math** — inline (`$...$`) and block (`$$...$$`) expressions rendered as MathML.
+* **Syntax Highlighting** — powered by Pygments, with the style configurable in `config.toml`.
+* **Inline Highlighting** — `==highlighted text==`.
+* **Strikethrough** — `~~strikethrough~~`.
+* **Improved Emphasis** — more reliable parsing of `*` and `_`.
+* **Automatic Links** — plain URLs are converted into clickable links.
+* **Keyboard Keys** — `{++Ctrl+Alt+Del++}` rendered as styled `<kbd>` elements.
+* **Details & Summary** — native support for collapsible `<details>` sections.
+* **Tabbed Content** — create tabbed layouts for code blocks and other content.
+* **Critic Markup** — annotate additions, deletions, substitutions, and comments using Critic Markup syntax.
+* **Modified Attribute Lists** — uses `[.class]` and `[:#id]` instead of Python-Markdown's default `{.class}` and `{:#id}` syntax to avoid conflicts with Jinja templates.
 
 # >**Templates**
 
@@ -121,10 +123,13 @@ Pages are rendered with **Jinja2**. Templates live in `src/templates/` (path con
 
 Any public function (no leading underscore) defined in `src/plugins.py` is automatically exposed as a template global:
 
+{% raw %}
+
 ```jinja
 {{ fetch("https://api.example.com/data", type="json") }}
 {{ read("src/data/content.txt") }}
 ```
+{% endraw %}
 
 The default `plugins.py` ships two functions:
 
