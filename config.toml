@@ -1,6 +1,6 @@
 [project]
 name        = "pi66.xyz"
-version     = "0.1.0"
+version     = "0.2.0"
 description = "my main website"
 
 [tree]
@@ -10,14 +10,18 @@ static    = "static"
 dest      = "/srv/www/pi66.xyz/public/html"
 
 templates = "build/templates"
-plugins   = "build/plugins.py"
+plugins   = "build/plugins"
 
 
 [webview]
 host  = "localhost"
-dev_tools = true
+port = 7999
+dev_tools = false
 html_path   = "/"
 static_path = "/static"
 
 [extras]
 highlight = "monokai"
+
+[cache]
+hash=".hash.cache"
