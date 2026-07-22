@@ -5,13 +5,12 @@ description = "my main website"
 
 [tree]
 markdown  = "md"
+static    = "src/static"
+templates = "src/templates"
+plugins   = "src/plugins"
 
-static    = "static"
-dest      = "/srv/www/pi66.xyz/public/html"
-
-templates = "build/templates"
-plugins   = "build/plugins"
-
+draft_dest   = "draft"
+release_dest = "/srv/www/pi66.xyz/public/html"
 
 [webview]
 host  = "localhost"
