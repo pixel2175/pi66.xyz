@@ -1,6 +1,5 @@
-{% extends "layout.html" %}
-{% block title %}Home{% endblock %}
-{% block content %}
+{% set page_title = "Pixel - Home" %}
+{% set page_content %}
 
 # >**Heyo :3** [.!text-xl .sm:!text-[1.6rem] .!leading(--text-3xl--line-height)]
 
@@ -22,7 +21,6 @@ and retro computing aesthetics.
 </div>
 
 # >**Pinged Projects** [.!text-xl .sm:!text-[1.6rem] .!leading(--text-3xl--line-height)]
-> [**Git Server →**](https://git.pi66.xyz): more of my projects and repositories.<br><br>
 
 > [**Walrs**](/tools/walrs): colorscheme generator from wallpaper.<br>
 > [**Merodi**](/tools/merodi): A markdown-based static site generator.<br>
@@ -36,4 +34,6 @@ and retro computing aesthetics.
 
 #### // Loves Linux & Retro Themes <br> // Let's all love lain [.!text-gray-600 .p-0]
 
-{% endblock %}
+{% endset %}
+
+{% include "base.html" %}

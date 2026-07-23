@@ -1,11 +1,10 @@
-{% extends "layout.html" %}
-{% block title %}Walrs{% endblock %}
+{% set page_title = "Walrs" %}
 
-{% block meta_description %}
+{% set page_meta_description %}
 Walrs is a lightweight Linux theming tool that extracts colors from wallpapers and applies them system-wide for consistent UI styling across applications.
-{% endblock %}
+{% endset %}
 
-{% block content %}
+{% set page_content %}
 
 # >[**Walrs**](/tools/walrs)
 
@@ -116,4 +115,6 @@ User:   236.90 ms
 System: 132.21 ms
 ```
 
-{% endblock %}
+{% endset %}
+
+{% include "base.html" %}

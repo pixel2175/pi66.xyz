@@ -1,7 +1,6 @@
-{% extends "layout.html" %}
-{% block title %}Tools{% endblock %}
+{% set page_title = "Tools" %}
 
-{% block content %}
+{% set page_content %}
 
 # >**My Tools & Apps**
 
@@ -27,4 +26,6 @@ Select a tool to explore:
 
 > Under Construction :)
 
-{% endblock %}
+{% endset %}
+
+{% include "base.html" %}

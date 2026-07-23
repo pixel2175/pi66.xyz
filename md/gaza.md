@@ -1,6 +1,5 @@
-{% extends "layout.html" %}
-{% block title %}Free Gaza{% endblock %}
-{% block content %}
+{% set page_title = "Free Gaza" %}
+{% set page_content %}
 
 # >**Why Gaza Should Be Free**
 
@@ -38,4 +37,6 @@ not under occupation and siege.
 > [ALJazeera](https://www.aljazeera.com/program/newsfeed/2024/3/22/gaza-drone-video-shows-killing-of-palestinians-in-israeli-air-attack) <br>
 > Gaza drone video shows killing of Palestinians in Israeli air attack.
 
-{% endblock %}
+{% endset %}
+
+{% include "base.html" %}

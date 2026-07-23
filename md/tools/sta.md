@@ -1,12 +1,10 @@
-{% extends "layout.html" %}
+{% set page_title = " STA " %}
 
-{% block title %} STA {% endblock %}
-
-{% block meta_description %}
+{% set page_meta_description %}
 STA is a lightweight, fast, and modular system tool designed for automation, analysis, and integration into Linux-based workflows. This documentation covers installation, usage, configuration, CLI commands, and architecture.
-{% endblock %}
+{% endset %}
 
-{% block content %}
+{% set page_content %}
 
 # >[**Sta**](/tools/sta)
 
@@ -67,4 +65,6 @@ This lets you mix static or manually-updated entries (e.g. a custom value set vi
 ```
 
 > **Note:** STA was created for learning purposes.
-{% endblock %}
+{% endset %}
+
+{% include "base.html" %}

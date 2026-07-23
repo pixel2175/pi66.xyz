@@ -1,11 +1,9 @@
-{% extends "layout.html" %}
-
-{% block meta_description %}
+{% set page_meta_description %}
 Anime API documentation for accessing anime data, search, episode lists, and streaming links via a RESTful JSON API at https://pi66.xyz/api. Includes endpoints for listing anime, retrieving details by slug, fetching episodes with quality options, and streaming video content.
-{% endblock %}
+{% endset %}
 
-{% block title %} PAnime {% endblock %}
-{% block content %}
+{% set page_title = " PAnime " %}
+{% set page_content %}
 
 # >**Anime API Documentation**
 
@@ -204,4 +202,6 @@ No authentication is currently required for any endpoints.
 - Quality options depend on what's available for each episode
 - Server availability may vary per episode and quality
 
-{% endblock %}
+{% endset %}
+
+{% include "base.html" %}

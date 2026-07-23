@@ -1,6 +1,5 @@
-{% extends "layout.html" %}
-{% block title %}About{% endblock %}
-{% block content %}
+{% set page_title = "About" %}
+{% set page_content %}
 
 {% for title, content in about|items %}
 
@@ -10,4 +9,6 @@
 
 {% endfor %}
 
-{% endblock %}
+{% endset %}
+
+{% include "base.html" %}

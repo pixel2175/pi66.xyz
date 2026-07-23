@@ -1,12 +1,10 @@
-{% extends "layout.html" %}
-
-{% block meta_description %}
+{% set page_meta_description %}
 Pino-rs is a lightweight Rust-based notification daemon for Linux, focused on fast rendering, theming support, and scriptable system notifications.
-{% endblock %}
+{% endset %}
 
-{% block title %} Pino-rs {% endblock %}
+{% set page_title = " Pino-rs " %}
 
-{% block content %}
+{% set page_content %}
 
 # >[**Pino**](/tools/pino-rs)
 
@@ -106,4 +104,6 @@ sound = false
 
 Pino is lightweight and efficient. The graphical notification window typically uses approximately **5-20MB of RAM** when active, ensuring minimal system resource consumption.
 
-{% endblock %}  
+{% endset %}
+
+{% include "base.html" %}

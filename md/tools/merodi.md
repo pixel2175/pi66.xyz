@@ -1,11 +1,10 @@
-{% extends "layout.html" %}
-{% block title %}Merodi{% endblock %}
+{% set page_title = "Merodi" %}
 
-{% block meta_description %}
+{% set page_meta_description %}
 A markdown-based static site generator built with Python. Write pages in markdown, style them with Jinja2 templates, and get a ready-to-publish website.
-{% endblock %}
+{% endset %}
 
-{% block content %}
+{% set page_content %}
 
 # >[**Merodi**](/tools/merodi)
 
@@ -208,4 +207,6 @@ Paths (relative to the project root) for where Merodi looks for input and writes
 | `settings.py` | Global `VERBOSE` / `NO_COLOR` flags set from CLI args or environment variables |
 
 > **Note:** Merodi is under active development (currently v0.2.0). The `--release`/`--debug` build flags are parsed but not yet acted upon.
-{% endblock %}
+{% endset %}
+
+{% include "base.html" %}
