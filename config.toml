@@ -24,3 +24,6 @@ highlight = "monokai"
 
 [cache]
 hash=".hash.cache"
+
+[globals]
+key="value"
