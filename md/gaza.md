@@ -1,4 +1,4 @@
-{% set page_title = "Free Gaza" %}
+{% set title = "Free Gaza" %}
 {% set page_content %}
 
 # >**Why Gaza Should Be Free**
@@ -17,7 +17,7 @@ Use of white phosphorus: In wars like 2008-2009, Israel used white phosphorus, a
 
 # >**Gaza Deserves Freedom**
 
-The people of Gaza are not terrorists — they are teachers, engineers,
+The people of Gaza are not terrorists &mdash; they are teachers, engineers,
 children, artists, and dreamers. They deserve to live in dignity and peace,
 not under occupation and siege.
 
@@ -25,8 +25,9 @@ not under occupation and siege.
 
 # >**Learn More**
 
-> [Al Jazeera – Gaza Coverage](https://www.aljazeera.com/tag/gaza/) <br>
+> [Al Jazeera &ndash; Gaza Coverage](https://www.aljazeera.com/tag/gaza/) <br>
 > Live coverage and in-depth reporting from the region. <br>
+
 > [Human Rights Watch](https://www.hrw.org/middle-east/n-africa/israel/palestine) <br>
 > Coverage and legal findings on Palestine and Israel.
 
@@ -34,9 +35,10 @@ not under occupation and siege.
 
 > [CNN World](https://edition.cnn.com/2025/04/05/middleeast/gaza-aid-workers-video-israel-intl/index.html) <br>
 > Video showing final moments of Gaza emergency workers casts doubt on Israeli account of killings. <br>
+
 > [ALJazeera](https://www.aljazeera.com/program/newsfeed/2024/3/22/gaza-drone-video-shows-killing-of-palestinians-in-israeli-air-attack) <br>
 > Gaza drone video shows killing of Palestinians in Israeli air attack.
 
 {% endset %}
 
-{% include "base.html" %}
+{% include "layout.md" %}

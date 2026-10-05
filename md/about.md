@@ -1,14 +1,14 @@
-{% set page_title = "About" %}
+{% set title = "About" %}
 {% set page_content %}
 
-{% for title, content in about|items %}
+{% for section in about %}
 
-# >**{{ title }}**
+# >**{{ section.title }}**
 
-{{ content }}
+{{ section.text }}
 
 {% endfor %}
 
 {% endset %}
 
-{% include "base.html" %}
+{% include "layout.md" %}
