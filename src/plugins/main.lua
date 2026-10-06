@@ -1,5 +1,5 @@
 merodi.enable.Table()
-merodi.enable.HtmlAttr()
+merodi.enable.HeaderAttr()
 
 merodi.jinja.set("about", dofile("src/data/about.lua"))
 merodi.jinja.set("my_tools", dofile("src/data/my_tools.lua"))
