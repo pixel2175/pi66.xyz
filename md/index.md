@@ -23,9 +23,9 @@ and retro computing aesthetics.
 
 # >**Pinged Projects** {class="!text-xl sm:!text-[1.6rem] !leading-(--text-3xl--line-height)"}
 
-> [**Walrs**](https://git.pi66.xyz/walrs/log.html): colorscheme generator from wallpaper.<br>
-> [**Merodi**](https://git.pi66.xyz/merodi/log.html): A markdown-based static site generator.<br>
-> [**Sta**](https://git.pi66.xyz/sta/log.html): minimal & simple status monitoring app.<br>
+> [**Walrs**](https://git.pi66.xyz/walrs/): colorscheme generator from wallpaper.<br>
+> [**Merodi**](https://git.pi66.xyz/merodi/): A markdown-based static site generator.<br>
+> [**Sta**](https://git.pi66.xyz/sta/): minimal & simple status monitoring app.<br>
 
 # >**Contact** {class="!text-xl sm:!text-[1.6rem] !leading-(--text-3xl--line-height)"}
 
