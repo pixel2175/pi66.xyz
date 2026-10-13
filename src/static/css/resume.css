@@ -1,0 +1,86 @@
+:root {
+    --background: #0b0b0b;
+    --foreground: #c7aa99;
+
+    --red: #c54540;
+    --green: #81933b;
+    --yellow: #ba8b30;
+    --blue: #6f939c;
+    --gray: #665c54;
+	--lightblue:#608085;
+    --orange: #d59b38;
+}
+
+@font-face {
+    font-family: "Cascadia Mono";
+    src: url("/static/fonts/cascadiamono-400-latin.woff2") format("woff2");
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Cascadia Mono";
+    src: url("/static/fonts/cascadiamono-700-latin.woff2") format("woff2");
+    font-weight: 700;
+    font-display: swap;
+}
+
+@page {
+    size: A4;
+    margin: 14mm 16mm;
+    background: var(--background);
+}
+
+html,
+body {
+    background: var(--background);
+    color: var(--foreground);
+    font-family: "Cascadia Mono", monospace;
+    font-size: 9.5pt;
+    line-height: 1.45;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+}
+
+body {
+    max-width: 180mm;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 700;
+    margin: 10pt 0 4pt;
+}
+
+h1 {
+    color: var(--orange);
+    font-size: 22pt;
+    text-align: center;
+}
+
+h2 {
+    color: var(--green);
+    font-size: 10.5pt;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--gray);
+}
+
+h3 {
+    color: var(--blue);
+    font-size: 9.5pt;
+}
+
+a {
+    color: var(--blue);
+    text-decoration: none;
+}
+
+em {
+    font-style: normal;
+}
+strong {
+	font-weight: 7000;
+}
