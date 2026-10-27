@@ -19,7 +19,7 @@
 
 # Pi66 {.pi66-title}
 
-[Home](https://pi66.xyz) | [Repos](https://git.pi66.xyz) | [About](https://pi66.xyz) | [Blog](https://blog.pi66.xyz) | [Gaza](https://pi66.xyz/gaza)
+[Home](/) | [Repos](https://git.pi66.xyz) | [About](/about) | [Blog](https://blog.pi66.xyz) | [Gaza](/gaza)
 
 </header>
 
@@ -29,7 +29,7 @@
 
 <nav>
 
-[Home](https://pi66.xyz) | [Repos](https://git.pi66.xyz) | [About](https://pi66.xyz) | [Blog](https://blog.pi66.xyz) | [Gaza](https://pi66.xyz/gaza)
+[Home](/) | [Repos](https://git.pi66.xyz) | [About](/about) | [Blog](https://blog.pi66.xyz) | [Gaza](/gaza)
 
 </nav>
 

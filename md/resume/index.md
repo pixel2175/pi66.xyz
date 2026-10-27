@@ -1,5 +1,5 @@
 {% document title="Pi66 - CV" %}
-{% style "/static/css/cv.css" %}
+{% style "/static/css/resume.css" %}
 {% script "https://cdn.jsdelivr.net/npm/@tailwindcss/browser" %}
 
 <div class="flex gap-3">
