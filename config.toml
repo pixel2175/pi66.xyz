@@ -1,6 +1,6 @@
 [project]
   name         = "pi66.xyz"
-  version      = "0.3.0"
+  version      = "0.4.0"
   description  = "my main website"
 
 [tree]
@@ -8,4 +8,4 @@
   templates    = "src/templates"
   plugins      = "src/plugins"
   draft_dest   = "draft"
-  release_dest = "/srv/www/pi66.xyz/public/html"
+  release_dest = "/srv/www/pi66.xyz/public"
